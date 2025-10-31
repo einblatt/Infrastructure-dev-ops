@@ -21,7 +21,7 @@
 
 `acme.sh --renew --dns -d "*.domain.com" --yes-I-know-dns-manual-mode-enough-go-ahead-please`
 
-### ### 自动验证（DNS API）
+### 自动验证（DNS API）
 支持泛域名自动续期,推荐使用
 
 
@@ -45,7 +45,7 @@ acme支持运营商: https://github.com/acmesh-official/acme.sh/blob/master/dnsa
 
 `crontab -e`
 
-### 自动续期添加日志
+### 自动续期输出日志
 `56 * * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /root/.acme.sh/acme.sh.log 2>&1`
 
 `crontab  -l`
