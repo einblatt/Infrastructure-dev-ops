@@ -2,7 +2,7 @@
 
 ## 申请证书
 ### HTTP模式(可实现单域名自动续期)
-`acme.sh --issue -d "*.domain.com" --webroot /usr/local/docker/nginx/cert`
+`acme.sh --issue -d "*.domain.com" --webroot /usr/local/docker/nginx/cert --force`
 
 ### DNS手动模式
 `acme.sh --issue --dns -d "*.domain.com" --yes-I-know-dns-manual-mode-enough-go-ahead-please`
