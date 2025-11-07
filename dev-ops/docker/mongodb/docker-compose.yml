@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongo_db  # 唯一容器名称
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin  # 建议使用不同用户名
+      MONGO_INITDB_ROOT_PASSWORD: admin  # 建议使用不同密码
+    volumes:
+      - ./mnt/mongodb/data1:/data/db         # 数据目录1
+      - ./mnt/mongodb/backup1:/data/backup   # 备份目录1
+    ports:
+      - "27017:27017"  # 暴露到宿主机的端口（确保无冲突）
+    command: ["--auth"]
