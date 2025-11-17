@@ -8,7 +8,8 @@ PASSWORD="front"
 echo "正在创建用户 $USER ..."
 useradd -m -d "$HOME_DIR" -s /bin/bash "$USER"
 echo "$USER:$PASSWORD" | chpasswd
-chmod -R 777 "$HOME_DIR"
+chmod 755 "$HOME_DIR"
+chown -R "$USER":"$USER" "$HOME_DIR"
 
 echo "用户 $USER 创建完成！"
 echo "家目录: $HOME_DIR"
