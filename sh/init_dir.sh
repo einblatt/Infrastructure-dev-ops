@@ -9,4 +9,4 @@ else
 fi
 
 cd ../dev-ops/docker
-cp -r mysql nginx redis /usr/local/docker
+cp -r ./ /usr/local/docker
