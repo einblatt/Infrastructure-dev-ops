@@ -63,7 +63,7 @@ run "sudo systemctl enable docker"
 run "sudo systemctl start docker"
 
 # 10. 安装独立版 docker-compose（可选，插件已装，此为备用）
-COMPOSE_VERSION="v2.6.1"
+COMPOSE_VERSION="v2.24.6"
 run "sudo curl -L "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose"
 run "sudo chmod +x /usr/local/bin/docker-compose"
 
